@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    height: 5000px;
+}
+.container{
+    background-color: black ;
+    width: 50%;
+    height: 1000px;
+    margin-top: 10rem;
+    position: relative;
+    /* parent class ka batana */
+    bottom: 20px;
+    right: 0px;
+}
+.box{
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.box:nth-child(2){
+    background-color: blueviolet;
+    position: absolute;  /*box container ke andar move karega*/
+    /* top or bottom  ya left or right one at a time */
+    top: 50px;
+    left: 60px;
+    /* box ki arrangment change karne ke leye jiska z-index zada hoga wo uper rahega */
+}
+
+.box-3{
+    position: fixed;
+}
+
+.box-1{
+    position: sticky;
+}
